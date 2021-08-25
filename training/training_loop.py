@@ -113,7 +113,7 @@ def training_loop(
     kimg_per_tick           = 1,        # Progress snapshot interval.
     image_snapshot_ticks    = 1,       # How often to save image snapshots? None = disable.
     network_snapshot_ticks  = 1,       # How often to save network snapshots? None = disable.
-    resume_pkl              = latest,     # Network pickle to resume training from.
+    resume_pkl              = None,     # Network pickle to resume training from.
     cudnn_benchmark         = True,     # Enable torch.backends.cudnn.benchmark?
     allow_tf32              = False,    # Enable torch.backends.cuda.matmul.allow_tf32 and torch.backends.cudnn.allow_tf32?
     abort_fn                = None,     # Callback function for determining whether to abort training. Must return consistent results across ranks.
